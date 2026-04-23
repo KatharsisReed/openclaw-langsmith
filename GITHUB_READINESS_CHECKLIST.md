@@ -6,6 +6,7 @@
 
 这个仓库已经完成了第一轮 GitHub 化整理，当前状态适合继续往“可展示作品仓库”推进。基础包装、测试闭环和 CI 都已经补上，剩下的主要是一个已确认保留的非阻塞项：
 
+- GitHub 仓库已创建并推送: `https://github.com/KatharsisReed/openclaw-langsmith`
 - 根目录 4 个 `.tar.gz` 备份文件按你的决定保留，不做删除处理
 
 ## 一、已完成
@@ -85,6 +86,12 @@
 - [x] `corepack pnpm build`
 - [x] `corepack pnpm test`
 
+### 1.5 GitHub 发布
+
+- [x] 创建公开仓库 `KatharsisReed/openclaw-langsmith`
+- [x] 配置 `origin`
+- [x] 推送 `main` 分支
+
 ## 二、仍待处理
 
 ### 2.1 已确认保留的项
@@ -109,6 +116,6 @@
 
 ## 四、建议下一步
 
-1. 先创建 GitHub 仓库，得到最终仓库 URL
-2. 推送本地仓库并确认 GitHub 页面展示正常
-3. 如果还要继续打磨面试展示，再补 `CONTRIBUTING.md`、badges 和文档精修
+1. 打开 GitHub 页面检查 README、License、目录结构和 Actions 是否展示正常
+2. 如果还要继续打磨面试展示，再补 `CONTRIBUTING.md`、badges 和文档精修
+3. 等 GitHub Actions 首次跑完后，再决定是否继续补 coverage 展示和示例目录

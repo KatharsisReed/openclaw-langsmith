@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Transcript-aware LangSmith tracing plugin for OpenClaw agent execution.",
+  "author": "KatharsisReed",
   "license": "MIT",
   "keywords": [
     "openclaw",
@@ -13,6 +14,14 @@
     "agent"
   ],
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatharsisReed/openclaw-langsmith.git"
+  },
+  "homepage": "https://github.com/KatharsisReed/openclaw-langsmith#readme",
+  "bugs": {
+    "url": "https://github.com/KatharsisReed/openclaw-langsmith/issues"
+  },
   "engines": {
     "node": ">=22.14.0"
   },

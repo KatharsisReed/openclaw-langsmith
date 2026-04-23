@@ -1,0 +1,28 @@
+{
+  "id": "openclaw-langsmith",
+  "name": "OpenClaw LangSmith Tracing Plugin",
+  "description": "LangSmith tracing plugin for OpenClaw agent execution.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true
+      },
+      "langsmithApiKey": {
+        "type": "string",
+        "minLength": 1
+      },
+      "projectName": {
+        "type": "string",
+        "minLength": 1,
+        "default": "openclaw"
+      },
+      "debug": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  }
+}

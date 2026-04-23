@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-test/
+coverage/
+*.tsbuildinfo
+.DS_Store
+.pnpm-store/
+*.tar.gz
+.tmp-gh-auth/

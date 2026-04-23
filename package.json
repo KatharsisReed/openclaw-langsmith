@@ -1,0 +1,52 @@
+{
+  "name": "@openclaw/openclaw-langsmith",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Transcript-aware LangSmith tracing plugin for OpenClaw agent execution.",
+  "license": "MIT",
+  "keywords": [
+    "openclaw",
+    "langsmith",
+    "tracing",
+    "plugin",
+    "observability",
+    "agent"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "test:build": "tsc -p tsconfig.test.json",
+    "test:run": "node dist-test/test/run-tests.js",
+    "test": "npm run test:build && npm run test:run",
+    "test:coverage": "npm run test:build && node dist-test/test/run-tests.js"
+  },
+  "dependencies": {
+    "langsmith": "^0.3.67"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.4.9"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "openclaw": "^2026.4.9",
+    "typescript": "^6.0.2"
+  },
+  "openclaw": {
+    "extensions": [
+      "./src/index.ts"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.4.9"
+    }
+  }
+}

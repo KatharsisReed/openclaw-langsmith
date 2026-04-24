@@ -55,8 +55,9 @@
   - [x] 更新 `before_message_write` 在追踪链路中的角色
 
 - [x] 明确 `self-learn-src/` 的处理策略
-  - [x] 当前决定为保留
-  - [x] 已在 `README.md` 中说明其为原型参考目录
+  - [x] 当前决定为本地保留、Git 不跟踪
+  - [x] 已在 `.gitignore` 中忽略
+  - [x] 已在 `README.md` 中说明其仅作本地原型参考
 
 ### 1.3 测试与自动化
 
@@ -74,6 +75,7 @@
   - [x] `test/handlers/transcript.test.ts`
 
 - [x] 添加 GitHub Actions
+  - [x] 先安装 `pnpm`
   - [x] `pnpm install`
   - [x] `pnpm check`
   - [x] `pnpm build`

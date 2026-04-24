@@ -128,7 +128,7 @@ corepack pnpm test
 
 ## 关于 `self-learn-src/`
 
-仓库中保留了 `self-learn-src/` 目录，用来展示早期原型验证过程。它不是正式实现，正式代码以 `src/` 为准。
+`self-learn-src/` 如果存在于本地，只作为个人原型参考目录使用，不纳入 Git 版本控制。正式实现始终以 `src/` 为准。
 
 ## 贡献指南
 

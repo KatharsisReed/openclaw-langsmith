@@ -7,3 +7,4 @@ coverage/
 .pnpm-store/
 *.tar.gz
 .tmp-gh-auth/
+self-learn-src/
